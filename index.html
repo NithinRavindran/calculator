@@ -17,47 +17,70 @@
 
 <body class="bg-dark">
     <div class="container">
-        <!-- <div class="row">
-            <h1 class="text-center ms-5 ps-5 mt-5 pt-5" style="color: white;">CALCULATOR</h1>
-        </div> -->
-        <div class="row  mt-5 pt-5">
-            <input id="result" class="form-control" type="text" placeholder="0">
+        <div class="row">
+            <div clas="col-6 ">
+                <input id="result" class="form-control mt-5 pt-3" type="text" placeholder="0">
+            </div>
+        </div>
+        <div class="row p-2">
+            <div class="col-12 text-center">
+                <button class="symbol" onclick="allclear()"><i class="fa-solid fa-c"></i></button>
+                <button class="symbol" onclick="del()"><strong>Del</strong></button>
+                <button class="symbol"><strong>( )</strong></button>
+                <button class="symbol" onclick="displaydata('%')"><i class="fa-solid fa-percent"></i></button>
+
+            </div>
+        </div>
+        <div class="row  p-1">
+            <div class="col-12 text-center">
+                <button class="symbol" onclick="displaydata('/')"><i class="fa-solid fa-divide"></i></button>
+                <button class="number" onclick="displaydata(7)"><i class="fa-solid fa-7"></i></button>
+                <button class="number" onclick="displaydata(8)"><i class="fa-solid fa-8"></i></button>
+                <button class="number" onclick="displaydata(9)"><i class="fa-solid fa-9"></i></button>
+
+            </div>
         </div>
 
-        <div class="row mt-2 section">
-                <div class="col-3"><button onclick="allclear()" class="button"><i class="fa-solid fa-c"></i></button></div>
-                <div class="col-3"><button onclick="del()" class="del" ><strong>Del</strong></button></div>
-                <div class="col-3"><button onclick="displaydata('%')" class="percent" ><i class="fa-solid fa-percent"></i></button></div>
-                <div class="col-3"><button onclick="displaydata('/')"  class="special"><i class="fa-solid fa-divide"></i></button></div>
+        <div class="row p-1">
+            <div class="col-12 text-center">
+                <button class="symbol" onclick="displaydata('×')"><i class="fa-solid fa-xmark"></i></button>
+                <button class="number" onclick="displaydata(4)"><i class="fa-solid fa-4"></i></button>
+                <button class="number" onclick="displaydata(5)"><i class="fa-solid fa-5"></i></button>
+                <button class="number" onclick="displaydata(6)"><i class="fa-solid fa-6"></i></button>
+
+            </div>
         </div>
 
-        <div class="row mt-2 section">
-            <div class="col-3"><button onclick="displaydata(7)" class=" button " ><i class="fa-solid fa-7"></i></button> </div>
-            <div class="col-3"><button onclick="displaydata(8)" class="del"><i class="fa-solid fa-8"></i></button> </div>
-            <div class="col-3"><button onclick="displaydata(9)" class="percent"><i class="fa-solid fa-9"></i></button></div>
-             <div class="col-3"> <button onclick="displaydata('×')"  class="special"><i class="fa-solid fa-xmark"></i></button></div>
+        <div class="row p-1">
+            <div class="col-12 text-center">
+                <button class="symbol" onclick="displaydata('-')"><i class="fa-solid fa-minus"></i></button>
+                <button class="number" onclick="displaydata(1)"><i class="fa-solid fa-1"></i></button>
+                <button class="number" onclick="displaydata(2)"><i class="fa-solid fa-2"></i></button>
+                <button class="number" onclick="displaydata(3)"><i class="fa-solid fa-3"></i></button>
+
+            </div>
+
         </div>
 
-        <div class="row mt-2 section">
-            <div class="col-3"><button onclick="displaydata(4)" class="button"><i class="fa-solid fa-4"></i></button> </div>
-            <div class="col-3"><button onclick="displaydata(5)" class="del" ><i class="fa-solid fa-5"></i></button> </div>
-            <div class="col-3"> <button onclick="displaydata(6)" class="percent" ><i class="fa-solid fa-6"></i></button> </div>
-            <div  class="col-3"><button onclick="displaydata('-')" class="special"><i class="fa-solid fa-minus"></i></button></div>
-        </div>
 
-        <div class="row mt-2 section">
-            <div class="col-3"><button onclick="displaydata(1)" class=" button" ><i class="fa-solid fa-1"></i></button> </div>
-            <div class="col-3"> <button onclick="displaydata(2)" class="del" ><i class="fa-solid fa-2"></i></button> </div>
-            <div class="col-3"><button onclick="displaydata(3)" class="percent" ><i class="fa-solid fa-3"></i></button> </div>
-            <div class="col-3"><button onclick="displaydata('+')"  class="special"><i class="fa-solid fa-plus"></i></button></div>
-        </div>
+        <div class="row p-1">
+            <div class="col-12 text-center">
+                <button class="symbol" onclick="displaydata('+')"><i class="fa-solid fa-plus"></i></button>
+                <button class="symbol" onclick="displaydata(0)"><i class="fa-solid fa-0"></i></button>
+                <button class="symbol" onclick=""><strong>^</strong></button>
+                <button class="symbol" onclick="displaydata('.')"><strong>.</strong></button>
 
-        <div class="row mt-2 section" >
-            <div class="col-4"><button onclick="displaydata(0)" class="zero" ><i class="fa-solid fa-0"></i></button> </div>
-            <div class="col-4"><button onclick="displaydata('.')" class="circle"><i class="fa-solid fa-circle"></i></button></div>
-            <div class="col-4"> <button onclick="evaluate()" class="equals"><i class="fa-solid fa-equals"></i></button></div>
+            </div>
+            <div class="row p-2">
+                <div class="col-12 text-center" style="margin-left: 1%;">
+                    <button class="symbol" ><strong>√</strong></button>
+                    <button class="symbol">±</button>
+                    <button class="symbol" onclick="evaluate()"><i class="fa-solid fa-equals"></i></button>
+                </div>
+            </div>
         </div>
     </div>
+
 </body>
 <script src="./calculator.js"></script>
 
