@@ -17,16 +17,19 @@
 
 <body class="bg-dark">
     <div class="container">
+        <div class="row mt-5 text-center">
+            <h1 class="text-white">CALCULATOR</h1>  
+        </div>
         <div class="row">
-            <div clas="col-6 ">
+            <div clas="col-6">
                 <input id="result" class="form-control mt-5 pt-3" type="text" placeholder="0">
             </div>
         </div>
         <div class="row p-2">
             <div class="col-12 text-center">
                 <button class="symbol" onclick="allclear()"><i class="fa-solid fa-c"></i></button>
-                <button class="symbol" onclick="del()"><strong>Del</strong></button>
-                <button class="symbol"><strong>( )</strong></button>
+                <button class="del" onclick="del()"><strong>Del</strong></button>
+                <button class="symbol" onclick="displaydata('()')"><strong>( )</strong></button>
                 <button class="symbol" onclick="displaydata('%')"><i class="fa-solid fa-percent"></i></button>
 
             </div>
@@ -43,7 +46,7 @@
 
         <div class="row p-1">
             <div class="col-12 text-center">
-                <button class="symbol" onclick="displaydata('×')"><i class="fa-solid fa-xmark"></i></button>
+                <button class="symbol" onclick="displaydata('*')"><i class="fa-solid fa-xmark"></i></button>
                 <button class="number" onclick="displaydata(4)"><i class="fa-solid fa-4"></i></button>
                 <button class="number" onclick="displaydata(5)"><i class="fa-solid fa-5"></i></button>
                 <button class="number" onclick="displaydata(6)"><i class="fa-solid fa-6"></i></button>
@@ -67,15 +70,14 @@
             <div class="col-12 text-center">
                 <button class="symbol" onclick="displaydata('+')"><i class="fa-solid fa-plus"></i></button>
                 <button class="symbol" onclick="displaydata(0)"><i class="fa-solid fa-0"></i></button>
-                <button class="symbol" onclick=""><strong>^</strong></button>
+                <button class="symbol" onclick="displaydata('^')"><strong>^</strong></button>
                 <button class="symbol" onclick="displaydata('.')"><strong>.</strong></button>
 
             </div>
             <div class="row p-2">
                 <div class="col-12 text-center" style="margin-left: 1%;">
-                    <button class="symbol" ><strong>√</strong></button>
-                    <button class="symbol">±</button>
-                    <button class="symbol" onclick="evaluate()"><i class="fa-solid fa-equals"></i></button>
+                    <button class="symbol" onclick="displaydata('√')"><strong>√</strong></button>
+                    <button class="evaluate" onclick="evaluateexpr()"><i class="fa-solid fa-equals"></i></button>
                 </div>
             </div>
         </div>

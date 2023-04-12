@@ -16,6 +16,14 @@ button{
     color: white;
     border-radius: 50%;
 }
+.del:hover{
+    background-color: rgb(210, 10, 6);
+    border-radius: 50%;
+}
+.evaluate:hover{
+    background-color: rgb(36, 137, 36);
+    border-radius: 50%;
+}
 
 @media(min-width:260px) and (max-width:1050px){
     #result{
